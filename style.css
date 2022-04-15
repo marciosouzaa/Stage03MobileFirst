@@ -1,0 +1,104 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  font-size: 62.5%;
+  --dark: hsl(219, 17%, 43%);
+  --grey: hsl(218, 17%, 62%);
+  --grey-pink: hsl(275, 18%, 79%);
+  --pink-soft: hsl(312, 91%, 96%);
+  --grey-soft: hsl(233, 100%, 97%);
+}
+body{
+  font-size: 2rem;
+  font-family: 'Staatliches', cursive;
+  /* font-family: 'Palanquin', sans-serif; */
+  font-weight: 400;
+  background: var(--grey-soft);
+}
+.page{
+  max-width: 38rem;
+  padding: 0 3.2rem 3rem;
+  margin: 0 auto;
+}
+header{
+  background: var(--grey);
+  height: 27.9rem;
+  padding: 3rem 0;
+
+}
+header .logo{
+  margin: 0 auto;
+  width: 19rem;
+  display: flex;
+  align-items: center;
+  
+}
+h1{
+  background: var(--grey-pink);
+  font-size: 4rem;
+  letter-spacing: .2rem;
+  text-align: center;
+  line-height: 5rem;
+  margin-top: 3.2rem;
+  color: white;
+  text-shadow: black .2rem .2rem;
+}
+main{
+  margin-top: 1.4rem;
+  animation: downtop 1s;
+}
+p{
+  font-family: 'Palanquin', sans-serif;
+  line-height: 1.5rem;
+  width: 30.5rem;
+  height: 7.5rem;
+  text-align: center;
+  display: flex;
+  color: #23053A;
+  margin-bottom: 6.4rem;
+}
+.card{
+  margin-bottom: 3.5rem;
+  position: relative;
+}
+.card h2{
+  position: absolute;
+  top: 1.6rem;
+  right: 1.6rem;
+  background: var(--pink-soft);
+  border-radius: 2rem;
+  height: 3.5rem;
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  padding: 0 2.4rem;
+  animation: topdown 2s;
+}
+.card img{
+  width: 100%;
+  height: auto;
+  
+}
+@keyframes topdown {
+  0%{
+    opacity: 0;
+    transform: translateY(-2.5rem);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes downtop{
+  0%{
+    opacity: 0;
+    transform: translateY(1.5rem);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
